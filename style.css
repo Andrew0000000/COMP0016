@@ -2,77 +2,44 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    background-color: rgb(75, 144, 101);
+    color: rgb(227, 226, 226);
+    background-color: rgb(3, 21, 10);
     margin: 0;
     padding: 0;
 }
-  
-header, footer, main, nav, article, section {
-    display: block;
-}
-  
-header, footer {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-}
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 nav {
-    background-color: rgb(88, 151, 141);
+    background-color: rgb(24, 29, 28);
     color: rgb(0, 0, 0);
-    ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        li {
-            margin-right: 20px;
-            a {
-                color: #fff;
-                text-decoration: none;
-            }
-        }
-    }
 }
 
-article {
-    h1 {
-        font-size: 32px;
-        margin: 20px 0;
-    }
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 20px 0;
-    }
+p {
+  text-indent: 30px;
 }
 
-section {
-    h2 {
-        font-size: 24px;
-        margin: 20px 0;
-    }
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li {
-            font-size: 16px;
-            margin: 10px 0;
-        }
-    }
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 29, 28);
+    padding: 30px;
+    margin: 30;
 }
 
-
+h2 {
+    font-size: 20px;
+    text-align: start;
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 29, 28);
+    padding: 20px;
+    margin: 30;
+}
 
 footer {
+    background-color: rgb(24, 29, 28);
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 14px;
-    margin: 0;
+    padding: 20px;
+    margin: 30;
 }
