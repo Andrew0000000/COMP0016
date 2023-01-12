@@ -43,3 +43,13 @@ footer {
     padding: 20px;
     margin: 30;
 }
+
+#home_text {
+    color: teal;
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+#home_body {
+    background-color: ghostwhite;
+}
