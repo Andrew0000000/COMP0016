@@ -37,8 +37,8 @@ footer {
 }
 
 #project_title {
-    color: darkgrey;
-    background-color: turquoise;
+    color: yellow;
+    background-color:rgb(43, 180, 218);
     text-align: center;
     padding-left: 3%;
     padding-right: 3%;
@@ -99,7 +99,7 @@ a:active {
 
 #abstract {
     width: 80%;
-    margin-left: 10%;
+    margin: auto;
     color: rgb(20,8,15);
     text-align: left;
     justify-content: space-evenly;
@@ -108,4 +108,17 @@ a:active {
 
 #abstract div {
     padding: 5px;
+}
+
+
+#team {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+.team_member {
+    padding: 1rem;
 }
