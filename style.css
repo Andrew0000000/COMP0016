@@ -123,3 +123,9 @@ a:active {
     padding: 1rem;
 }
 
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: rgb(170, 169, 169);
+}
+
+
