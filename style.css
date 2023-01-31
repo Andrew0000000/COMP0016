@@ -122,3 +122,8 @@ a:active {
 .team_member {
     padding: 1rem;
 }
+
+#quote {
+    font-weight: bold;
+}
+
