@@ -622,25 +622,25 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# Abstract
 --------------------------------------------------------------*/
-.about .content h3 {
+.abstract .content h3 {
   font-weight: 700;
   font-size: 28px;
   font-family: "Poppins", sans-serif;
 }
 
-.about .content ul {
+.abstract .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.abstract .content ul li {
   padding: 0 0 8px 26px;
   position: relative;
 }
 
-.about .content ul i {
+.abstract .content ul i {
   position: absolute;
   font-size: 20px;
   left: 0;
@@ -648,9 +648,18 @@ section {
   color: #ffc451;
 }
 
-.about .content p:last-child {
+.abstract .content p:last-child {
   margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# YouTube Video
+--------------------------------------------------------------*/
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 
 /*--------------------------------------------------------------
 # Clients
