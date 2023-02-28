@@ -273,7 +273,7 @@ h6 {
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
   background-color: #ffc451;
-  color: #000000;
+  color: #0a0a0a;
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
@@ -549,7 +549,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  color: #543f16;
+  color: #7c612a;
   font-family: "Poppins", sans-serif;
 }
 
@@ -562,7 +562,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #b4821d;
+  color: #d99c23;
   font-family: "Poppins", sans-serif;
 }
 
@@ -574,7 +574,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  color: #b4821d;
+  color: #d99c23;
   font-family: "Poppins", sans-serif;
 }
 
@@ -584,7 +584,7 @@ section {
   height: 1.7px;
   display: inline-block;
   align-items: flex-end;
-  background: #6a6a6a;
+  background: #858484;
   margin: 10px 10px;
 }
 
@@ -594,7 +594,7 @@ section {
   height: 1.7px;
   display: inline-block;
   align-items: flex-start;
-  background: #6a6a6a;
+  background: #858484;
   margin: 10px 10px;
 }
 
@@ -609,7 +609,7 @@ section {
 }
 
 .nav-pills .nav-link {
-  color: #704901;
+  color: #7d5b1a;
 }
 
 .nav-pills .nav-link.active {
@@ -1223,10 +1223,10 @@ section {
   position: absolute;
   left: 0;
   bottom: 30px;
-  right: 0;
+  right: 15px;
   opacity: 0;
   transition: ease-in-out 0.3s;
-  text-align: center;
+  text-align: right;
 }
 
 .team .member .social a {
