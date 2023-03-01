@@ -1493,6 +1493,30 @@ iframe {
 }
 
 /*--------------------------------------------------------------
+# Appendix
+--------------------------------------------------------------*/
+.collapse {
+  display: none;
+}
+
+.appendix .container .btn-primary{
+  color: #ffc451;
+  background: #151515;
+}
+
+
+.collapse.show {
+  display: block;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 1.35s ease;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
