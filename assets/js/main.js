@@ -201,6 +201,13 @@
   });
 
   /**
+   * Development Blog Collapse
+   */
+  const collapseElementList = document.querySelectorAll('.collapse')
+  const collapseContent = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+
+
+  /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
