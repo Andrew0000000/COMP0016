@@ -1659,3 +1659,20 @@ iframe {
   font-size: 13px;
   color: #fff;
 }
+
+.biweekly-update {
+  padding-left: 8%;
+  text-align: left;
+
+}
+
+.biweekly-update h4{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #b41d78;
+  font-family: "Poppins", sans-serif;
+}
