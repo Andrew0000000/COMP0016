@@ -178,7 +178,37 @@
       <div class="subsection-title">
           <h2>Existing Solutions</h2>
 
-          <p>The IBM Watson Platform offers various APIs</p>
+          <p>The IBM Watson Platform offers various APIs. The ones we considered mainly were the 
+            IBM Watson Assistant API, IBM Watson Clinical Data Analysis API and the IBM Watson Discovery API. We 
+            opted for the IBM Watson Assistant API to work alongside the Text to Speech API.
+          </p>
+
+          <p>
+            The clincial data analysis API receives a patient's past medical data as input. Using the Watson
+            Natural Language Processing capabilities, it is able to match the patient with others in its database
+             to obtain similar matches. This allows it to determine and suggest a suitable treatment plan for the patient.
+            While this API gives the results we want for our intended platform, it has unfortunately been sold to 
+            a third-party company (is it Merative?), which means the use of this tool is restricted. 
+          </p>
+
+          <p>
+            The IBM Watson Discovery API is essentially a cognitive search engine. It is able to pinpoint specific text 
+            patterns or keywords to help find accurate solutions. Since patients communicate to GPs about a number of
+            symptoms or discomfort they face, we believe this API could help the GP identify the important parts of the
+            patients' often long and potentially unclear messages, and rephrase it into more concise, technical statements
+            to be read by GPs. this would aid the GP in figuring out what illness the patient is suffering from. However,
+            this API is restricted by IBM Cloud's paid services, so we decided against using it.
+          </p>
+
+          <p>
+            The IBM Watson Assistant API is an automated chat bot. With user customization, it can also recognize text patterns
+            or keywords, and produce a response that matches the context. While it may not be as suitable as the other 2 
+            options for assisting GPs in diagnosing patients, it can be extremely useful for automating the process of
+            scheduling GP appointments for patients. Since it can identify words in text messages and deduce that its purpose
+            is to book an appointment, plus the date and time at which the patient is available, using it for an automated
+            appointing system should be suitable. Moreover, it isn't restricted by third-party or paid services,
+            making it more accessible for everyone.
+          </p>
       </div>
   </div>
 </section>

@@ -1678,12 +1678,18 @@ iframe {
 }
 
 .tech_watson {
-  padding-top: 100px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  margin: auto;
   text-align: left;
-
 }
 
 .tech_watson h3 {
   text-align: left;
+}
 
+#ganttpic {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
 }
