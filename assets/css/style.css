@@ -1693,3 +1693,14 @@ iframe {
   max-width: 80%;
   margin: 0 auto;
 }
+
+.keyfeature h3 {
+  text-align: left;
+  padding-top: 2rem;
+
+}
+
+.kftext {
+  margin: auto;
+  padding-bottom: 1rem;
+}
