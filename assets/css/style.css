@@ -1704,3 +1704,8 @@ iframe {
   margin: auto;
   padding-bottom: 1rem;
 }
+
+.evaluation_section h3 {
+  text-align: left;
+  padding-top: 2rem;
+}
