@@ -174,8 +174,188 @@
       <h2>Research</h2>
     </div>  
 
-
-<!-- ======= Footer ======= -->
+<!-- ======= Project Research Section ======= -->
+  
+  <section id="ProjectResearch" class="research">
+    <div class="container" data-asos="fade-up">
+      <div class="subsection-title">
+        <h2>Project Research</h2>
+      </div>
+      <div class="subsection-title">
+        <h5>IBM Cloud APIs Choice</h5>
+      </div>
+      <div class="subsection-title">
+        <h6>Overview</h6>
+      </div>
+      <p>
+        At first when we were introduced to our scenario, we thought of two different potential software use cases that utilized IBM Cloud 
+        APIs. They are:
+      </p>
+      <ul>
+        <li>
+          <b>AI medical data analysist</b> - For each returning patient, an AI data analysist can search up all of his/her past medical records, 
+          analyse it and suggest several potential health issues and their respective treatments for the patient with risk estimation to the 
+          doctor before his judgement. This aims to reduce the time for diagnosis, thus to reduce the chance of missing the golden opportunity 
+          to treat the patient before it is too late. Patients with late-stage cancer and organ failure may greatly benefit from it.
+        </li>
+        <br>
+        <li>
+          <b>Doctor appointment assistant</b> - An online chat bot operating 24/7 that helps patients make doctor appointments. It may also help 
+          suggesting patients with simple self-aid treatments if there was a minor illness/injury. This aims to reduce the repetitive and 
+          quantitative workload of nurses, so that they could focus more on qualitative work such as comforting patients in a hospital. This 
+          also aims to reduce the reliant of patients with minor illness, so that clinics and hospitals can spare up more capacity for patients 
+          with more serious and urgent illness.
+        </li>
+      </ul>
+      <br>
+      <br>
+      <div class="subsection-title">
+        <h6>Suitable APIs</h6>
+      </div>
+      <p>
+        With the mentioned two use cases in mind, we narrow our choice of APIs down to Watson Discovery, Watson Assistant and Annotator for Clinical Data.
+      </p>
+      <ul>
+        <li>
+          <b>Watson Discovery</b><sup>1</sup> - an intelligent document processing engine that helps discovering valuable data within 
+          long and complex documents. This can help identifying and extract illness related keywords such as symptoms for easier diagnosis.
+        </li>
+        <br>
+        <li>
+          <b>Watson Assistant</b><sup>2</sup> - cross device, application or channel chatbot equip with self-learning AI capabilities to 
+          understand questions that customers ask in natural language. This can help appointment making experience more personalized and convenient.
+        </li>
+        <br>
+        <li>
+          <b>Annotator for Clinical Data</b><sup>3</sup> - extracts clinical insights, medical concepts, and medical codes from unstructured 
+          data with pre-built but highly customizable annotators and cartridges. This is Watson Discovery specialized in the medical field.
+        </li>
+        <br>
+      </ul>
+      <br>
+      <div class="subsection-title">
+        <h6>Ethics</h6>
+      </div>
+      <p>
+        While the use of AI carrying out pre-diagnosis and suggesting suitable treatment may sounds cost effective and possibly even with 
+        a higher judgement accuracy than doctors, it is controversial as an unethical way to treat patients, especially those with their 
+        lives depending on it. We therefore decide not to include this function into our use cases.
+      </p>
+      <br>
+      <br>
+      <div class="subsection-title">
+        <h6>APIs with Limited Accessibility</h6>
+      </div>
+      <p>
+        After some research and experiment, we found out that Annotator for Clinical Data API under the scope of Merative<sup>4</sup>, formerly IBM 
+        Watson Health, was no longer available in IBM Cloud a few months after this project began. The accessibility of Watson Discovery 
+        on the other hand, was locked behind a monthly subscription for its strong capability which our IBM client could not grant access 
+        to students. Watson Assistant therefore became our final go to API for this project.
+      </p>
+      <br>
+      <br>
+      <div class="subsection-title">
+        <h2>Technical Research</h2>
+      </div>
+      <div class="subsection-title">
+        <h5>Building Custom Connector</h5>
+      </div>
+      <div class="subsection-title">
+        <h6>Overview</h6>
+      </div>
+      <p>
+        To enable the use of IBM Watson APIs in Microsoft Power Platform, a custom connector can be built with a single API using 
+        either Power Automate or Power Apps. There is no difference in how custom connector behaves across the two application and 
+        building a connector on either one of them can be reused by the other. The process of building a custom connector can be divided 
+        into three different steps. They are security setting, definition setting, and testing.
+      </p>
+      <br>
+      <br>
+      <div class="subsection-title">
+        <h6>Security/Authentication</h6>
+      </div>
+      <p>
+        Each connector requires an Authentication method based on how the used API specification. The connector is only said to be functional 
+        when the correct authentication is passed to the API, which grant access to sending and receiving messages between the connector and 
+        the API. For all IBM Watson's API, a basic authentication is used with the field 'username' filled with the fixed string “apikey”, 
+        and the field 'password' filled with the unique API key given in the user's IBM Cloud account. The other available authentication methods 
+        that is not used by the IBM APIs include API keys and OAuth2.0.
+      </p>
+      <br>
+      <br>
+      <div class="subsection-title">
+        <h6>Definition/Triggers and Actions</h6>
+      </div>
+      <p>
+        The definition of a connector represents its triggers and actions, meaning how the connector will behave when a certain command is 
+        received. This is similar to a method in coding, which also refers to the methods in an API. Each method offered by the API should 
+        be built into one action in a connector using an URL. While the best solution is to include every single method given by the API into 
+        its connector, we are aware that our limited time on the project is not enough for a fully built connector, thus we have decided to 
+        only include the methods that most suit the environment of building an app using Power App. For example, in our Watson Assistant 
+        connector, we only included 'create session', 'delete session', 'send user input to assistant (stateful)' and 'send user input to 
+        assistant (stateless)' methods which allows users of a mobile app using the connector to connect and communicate to Watson Assistant. 
+        Without other backend methods like 'list log events' and 'update environment', which only the developers should use and users should 
+        not have access to. 
+      </p>
+      <p>
+        While building actions and triggers can be performed using the template provided by Power Apps, custom code can be 
+        used on each action to further advance its functionality. As in our project we aims to provide a general solution for the public to 
+        expand on, rather than a connector specialized in performing a certain action, we built our actions without any custom codes.
+      </p>
+      <br>
+      <br>
+      <div class="subsection-title">
+        <h6>Testing</h6>
+      </div>
+      <p>
+        Testing a custom connector can be done by performing actions and sending request to the API and checking if a correct JSON response 
+        is received. It can also be done by test running with a canvas app, or a flow template. This will be further explained in the 
+        'testing' section.
+      </p>
+      <br>
+      <br>
+      <div class="subsection-title">
+        <h6>Other building methods</h6>
+      </div>
+      <p>
+        While connectors can be built from scratch by going through the steps mentioned above, there is also other workarounds such as importing 
+        an OpenAPI specification<sup>5</sup> (Swagger specification) or a Postman collection<sup>6</sup>. Importing by either methods will automatically generate all 
+        actions and codes listed inside the imported file. This is useful especially when we tried to understand working and testing with Watson
+        APIs at first using Postman, without operating on Power Platform, and we wish to save some time and reduce human error when implementing 
+        it.
+      </p>
+      <br>
+      <br>
+      <p>
+        <hr>
+        <ol>
+          <h5>References</h5>
+          <li>
+            <a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-about">Watson Discovery</a>
+          </li>
+          <li>
+            <a href="https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-about">Watson Assistant</a>
+          </li>
+          <li>
+            <a href="https://github.com/merative/acd-cartridges">Annotator for Clinical Data</a>
+          </li>
+          <li>
+            <a href="https://www.merative.com/">Merative</a>
+          </li>
+          <li>
+            <a href="https://github.com/OAI/OpenAPI-Specification">OpenAPI Specification Github </a>
+          </li>
+          <li>
+            <a href="https://www.postman.com/collection/">Postman collection </a>
+          </li>
+        </ol>
+        <hr>
+      </p>
+      
+    </div>
+  </section>
+  
+  <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="footer-top">
         <div class="container">

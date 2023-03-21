@@ -32,6 +32,13 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+p {
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -554,7 +561,7 @@ section {
 }
 
 .subsection-title h2{
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   padding-top: 90px;
   padding-bottom: 20px;
@@ -593,7 +600,7 @@ section {
 }
 
 .subsection-title h5{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1px;
   margin: 0 0 50px 0;
@@ -601,6 +608,18 @@ section {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.subsection-title h6{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1px;
+  margin: 0 0 30px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #ad7f23;
   font-family: "Poppins", sans-serif;
 }
 
