@@ -1757,3 +1757,25 @@ iframe {
   margin-bottom: 2rem;
 }
 
+table {
+  border: 1px solid grey;
+  max-width: 80%;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+
+td {
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+th {
+  border: 1px solid grey;
+  padding: 4px;
+  color: darkblue;
+}
+
+tr:hover {
+  background-color: lightcyan;
+}
