@@ -146,7 +146,6 @@
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="appendix.html#DevelopmentBlog">Development Blog</a></li>
               <li><a class="dropdown-item" href="appendix.html#MonthlyDevelopmentVideos">Monthly Development Videos</a></li>
-              <li><a class="dropdown-item" href="appendix.html#UserManual">User Manual</a></li>
               <li><a class="dropdown-item" href="appendix.html#DeploymentManual">Deployment Manual</a></li>
               <li><a class="dropdown-item" href="appendix.html#LegalIssues&Processes">Legal Issues & Processes</a></li>
             </ul>
@@ -233,28 +232,28 @@
           <ol>
             <h5>References</h5>
             <li>
-              <a href="https://powerplatform.microsoft.com/en-gb/">Microsoft Power Platform</a>
+              <a href="https://powerplatform.microsoft.com/en-gb/" target="_blank">Microsoft Power Platform</a>
             </li>
             <li>
-              <a href="https://powerbi.microsoft.com/en-au/">Power BI</a>
+              <a href="https://powerbi.microsoft.com/en-au/" target="_blank">Power BI</a>
             </li>
             <li>
-              <a href="https://powerapps.microsoft.com/en-au/">Power App</a>
+              <a href="https://powerapps.microsoft.com/en-au/" target="_blank">Power App</a>
             </li>
             <li>
-              <a href="https://powerpages.microsoft.com/en-ca/">Power Pages</a>
+              <a href="https://powerpages.microsoft.com/en-ca/" target="_blank">Power Pages</a>
             </li>
             <li>
-              <a href="https://powerautomate.microsoft.com/en-au/">Power Automate</a>
+              <a href="https://powerautomate.microsoft.com/en-au/" target="_blank">Power Automate</a>
             </li>
             <li>
-              <a href="https://powervirtualagents.microsoft.com/en-au/">Power Virtual Agents</a>
+              <a href="https://powervirtualagents.microsoft.com/en-au/" target="_blank">Power Virtual Agents</a>
             </li>
             <li>
-              <a href="https://www.ibm.com/watson">IBM Watson</a>
+              <a href="https://www.ibm.com/watson" target="_blank">IBM Watson</a>
             </li>
             <li>
-              <a href="https://web.archive.org/web/20110629122438/http://www.research.ibm.com/deepqa/deepqa.shtml">The DeepQA Project</a>
+              <a href="https://web.archive.org/web/20110629122438/http://www.research.ibm.com/deepqa/deepqa.shtml" target="_blank">The DeepQA Project</a>
             </li>
           </ol>
           <hr>
@@ -282,7 +281,7 @@
           codes hidden behind the backend.
         </p>
         <p>
-          We therefore are trying to utilise AI solutions offered by IBM Cloud and make them available for use in low-code software development platform such 
+          Therefore, we are trying to utilise AI solutions offered by IBM Cloud and make them available for use in low-code software development platform such 
           as Microsoft Power Platform. This is possible by building custom connector that connects Power Platform with IBM Cloud's open APIs. As custom connector 
           is an open source tool offered in power platform, we believe our try in building one can inspire the connector community to further develop connectors 
           with IBM Cloud, leading to the final goal of enabling all IBM Cloud resources to be used in Power Platform, stretching the already powerful capability it has.
@@ -493,69 +492,72 @@
         <div class="subsection-title">
           <h2>Moscow Diagram</h2>
         </div>
-        <p>
-          Based on our template use case, we construct the following MoSCoW list for other developers that wish to use our connector for reference.
+        <p align="center">
+          Based on our template use case, we have constructed the following MoSCoW list for other developers that wish to use our connector for reference.
         </p>
         <!-- align tables into two columns and centre them-->
         <div class="row">
-          <div class="col-6" style="text-align: center;">
-            <table>
-              <caption><b>Functional Requirements</b></caption>
+          <div class="moscowTableDiv" align="center">
+            <table class="moscow" style="width:80%">
               <tr>
                 <th>Priority</th>
-                <th>Requirement</th>
+                <th>Requirement for Connector</th>
+                <th>Requirement for Canvas App</th>
               </tr>
               <tr>
                 <td>Must-Have</td>
-                <td>Appointment booking</td>
-              </tr>
-              <tr>
-                <td>Must-Have</td>
-                <td>Appointment cancellation</td>
+                <td>
+                  <ul>
+                    <li>Correct authentication between Power Platform and IBM Cloud API</li>
+                    <li>Main methods carrying out the core functionality of API</li>
+                    <li>API resource set up in IBM Cloud</li>
+                    <li>Successful connection set up between Power Platform and API Canvas App</li>
+                  </ul>
+                </td>
+                <td>  
+                  <ul>
+                    <li>Ways to start session with Assistant</li>
+                    <li>Text box for inputting message</li>
+                    <li>Ways to submit input message to Assistant (Button)</li>
+                    <li>Display of Assistant response</li>
+                  </ul>
+                </td>
               </tr>
               <tr>
                 <td>Should-Have</td>
-                <td>Appointment rescheduling</td>
+                <td>All methods from API for front-end app users</td>
+                <td>
+                  <ul>
+                    <li>Include multiple connectors for wider functionality and practicality</li>
+                    <li>Deployment template for reference</li>
+                    <li>More custom actions for Assistant</li>
+                  </ul>
+                </td>
               </tr>
               <tr>
                 <td>Could-Have</td>
-                <td>Appointment reminder</td>
+                <td>
+                  <ul>
+                    <li>All methods from API for backend developers</li>
+                    <li>Custom Icon and description for connector</li>
+                    <li>Custom code for actions and triggers</li>
+                  </ul>
+                </td>
+                <td>Custom flow template for automation</td>
               </tr>
               <tr>
-                <td>Would-Like-To-Have</td>
-                <td>Appointment feedback</td>
+                <td>Won't-Have</td>
+                <td>All APIs offered by IBM Watson (Exceeded limited project time)</td>
+                <td>
+                  <ul>
+                    <li>Multi-language support for Assistant (Out of scope of project)</li>
+                    <li>Connected calendar and database (Out of scope of projec)t</li>
+                  </ul>
+                </td>
               </tr>
             </table>
           </div>
-          <div class="col-6" style="text-align: center;">
-            <table>
-              <caption><b>Non-functional Requirements</b></caption>
-              <tr>
-                <th>Priority</th>
-                <th>Requirement</th>
-              </tr>
-              <tr>
-                <td>Must-Have</td>
-                <td>Easy to use</td>
-              </tr>
-              <tr>
-                <td>Must-Have</td>
-                <td>Fast response time</td>
-              </tr>
-              <tr>
-                <td>Should-Have</td>
-                <td>Accurate</td>
-              </tr>
-              <tr>
-                <td>Could-Have</td>
-                <td>Secure</td>
-              </tr>
-              <tr>
-                <td>Would-Like-To-Have</td>
-                <td>Reliable</td>
-              </tr>
-            </table>
-          </div>
+          
         </div>
       </div>
     </section>

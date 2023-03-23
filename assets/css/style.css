@@ -1728,10 +1728,6 @@ iframe {
   padding-top: 2rem;
 }
 
-#devmanualvid {
-  display: block;
-  margin: 0 auto;
-}
 
 #legalIssue {
   margin-bottom: 3rem;
@@ -1778,4 +1774,12 @@ th {
 
 tr:hover {
   background-color: lightcyan;
+}
+
+.moscow {
+  text-align: left;
+}
+
+.moscowTableDiv {
+  width: 100%;
 }
