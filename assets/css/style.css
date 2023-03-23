@@ -1732,3 +1732,7 @@ iframe {
   display: block;
   margin: 0 auto;
 }
+
+#legalIssue {
+  margin-bottom: 3rem;
+}
