@@ -1736,3 +1736,16 @@ iframe {
 #legalIssue {
   margin-bottom: 3rem;
 }
+
+.keyfeature {
+  margin-bottom: 3rem;
+
+}
+
+.kftext {
+  width: 100%;
+  text-align: center;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+
+}

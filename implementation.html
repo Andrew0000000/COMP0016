@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Gp Bootstrap Template - Index</title>
+  <title>Implementation</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -179,21 +179,28 @@
 <section id="features" class="requirements">
   <div class="container" data-aos="fade-up">
       <div class="subsection-title">
-          <h2>Key Features</h2>
+          <h2>Key Features for IBM Watson Assistant Connector</h2>
 
           <div class="keyfeature" id="kf1">            
-            <h3>Key Feature 1</h3>
-            <div class="kftext">This is the first key feature</div>
+            <h3>Authentication</h3>
+            <p class="kftext">Paste the IBM Watson Assistant API key, service URL and Assistant Environment ID in the connector congifuration</p>
           </div>
 
           <div class="keyfeature" id="kf2">            
-            <h3>Key Feature 2</h3>
-            <div class="kftext">This is the second key feature</div>
+            <h3>Create and delete session</h3>
+            <p class="kftext">A new session is created to send user input and maintain the state of the conversation. It can either be deleted explicitly, or be inactive for a period of all-time
+              and time out.
+            </p>
           </div>
 
           <div class="keyfeature" id="kf3">            
-            <h3>Key Feature 3</h3>
-            <div class="kftext">This is the third key feature</div>
+            <h3>Send user input to assistant (stateful)</h3>
+            <p class="kftext">User input is sent as a request to the assistant, and a response is then received. Conversation state is stored by the Watson Assistant for the duration of the session.</p>
+          </div>
+
+          <div class="keyfeature" id="kf3">            
+            <h3>Send user input to assistant (stateless)</h3>
+            <p class="kftext">User input is sent as a request to the assistant, and a response is then received. Conversation state is not stored.</p>
           </div>
 
       </div>
