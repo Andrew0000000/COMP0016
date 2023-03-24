@@ -168,103 +168,110 @@
   <main id="main">
     
     <div class="section-title">
-      <h2>Implementation
-      </h2>
+      <h2>Implementation</h2>
+      <br>
+      <br>
+      <p>Key Features</p>
     </div>
-    
-    
-<!-- ======= Key Features Section ======= -->
-<section id="features" class="requirements">
+
+<!-- ======= IBM Watson Assistant Connector Section ======= -->
+<section id="KeyFeature1" class="requirements">
   <div class="container" data-aos="fade-up">
-      <div class="subsection-title">
-          <h2 id="kf1">Key Features -- IBM Watson Assistant Connector</h2>
-          <p class="kfoverview">The IBM Watson™ Assistant service combines machine learning, natural language understanding, 
-            and an integrated dialog editor to create conversation flows between your apps and your users.
-          </p>
-          <p class='kfoverview'>A Microsoft Power Apps/Power Platform plan, IBM Cloud account with Watson access and a provisioned Watson
-            Assistant resource are required.
-          </p>
-
-          <div class="keyfeature">            
-            <h3>Authentication</h3>
-            <p class="kftext">Paste the IBM Watson Assistant API key, service URL and Assistant Environment ID 
-              in the connector congifuration</p>
-          </div>
-
-          <div class="keyfeature">            
-            <h3>Create and delete session</h3>
-            <p class="kftext">A new session is created to send user input and maintain the state of the 
-              conversation. It can either be deleted explicitly, or be inactive for a period of all-time
-              and time out.
-            </p>
-          </div>
-
-          <div class="keyfeature">            
-            <h3>Send user input to assistant (stateful)</h3>
-            <p class="kftext">User input is sent as a request to the assistant, and a response is then received. 
-              Conversation state is stored by the Watson Assistant for the duration of the session.</p>
-          </div>
-
-          <div class="keyfeature">            
-            <h3>Send user input to assistant (stateless)</h3>
-            <p class="kftext">User input is sent as a request to the assistant, and a response is then received. 
-              Conversation state is not stored.</p>
-          </div>
-
-      </div>
-
-      <div class="subsection-title">
-        <h2 id="kf2">Key Features -- IBM Text to Speech Connector</h2>
-        <p class="kfoverview">The IBM Watson™ Text to Speech service provides APIs that use IBM's speech-synthesis capabilities 
-          to synthesize text into natural-sounding speech in a variety of languages, dialects, and voices. The service supports
-           at least one male or female voice, sometimes both, for each language. The audio is streamed back to the client with minimal delay.
-        </p>
-        <p class='kfoverview'>A Microsoft Power Apps/Power Platform plan, IBM Cloud account with Watson access and a provisioned
-          Watson Text to Speech resource are required.
-        </p>
-
-        <div class="keyfeature" id="kf1">            
-          <h3>Authentication</h3>
-          <p class="kftext">Paste the IBM Watson Text to Speech API key and service URL in the connector congifuration</p>
-        </div>
-
-        <div class="keyfeature">            
-          <h3>Synthesize</h3>
-          <p class="kftext">
-            Synthesize user inputted text to audio and pronounce it with a voice that matches the language
-            of the text input.
-          </p>
-        </div>
-
-        <div class="keyfeature">            
-          <h3>Get pronunciation</h3>
-          <p class="kftext">
-            Return the phonetic pronunciation for the specific word.        
-          </p>
-        </div>
-
-        <div class="keyfeature">            
-          <h3>List voices</h3>
-          <p class="kftext">
-            List all the voices available for use. Display information about the voice, including name, language and gender.
-          </p>
-        </div>
-
-        <div class="keyfeature">            
-          <h3>Get a voice</h3>
-          <p class="kftext">
-            Return information about the specified voice, including name, language and gender. If a customization ID is
-            used, return information for the custom model defined for the language of the specified voice.        
-
-          </p>
-        </div>
-
+    <div class="subsection-title">
+      <h2>IBM Watson Assistant Connector</h2>
     </div>
+    <p>The IBM Watson™ Assistant service combines machine learning, natural language understanding, 
+      and an integrated dialog editor to create conversation flows between your apps and your users.
+    </p>
+    <p>A Microsoft Power Apps/Power Platform plan, IBM Cloud account with Watson access and a provisioned Watson
+      Assistant resource are required.
+    </p>
+
+    <div class="subsection-title">
+      <h4>Authentication</h4>
+    </div>
+    <p>Paste the IBM Watson Assistant API key, service URL and Assistant Environment ID 
+      in the connector congifuration</p>
+    
+    <div class="subsection-title">
+      <h4>Create and delete session</h4>
+    </div>
+    <p>A new session is created to send user input and maintain the state of the 
+      conversation. It can either be deleted explicitly, or be inactive for a period of all-time
+      and time out.
+    </p>
+
+    <div class="subsection-title">
+      <h4>Send user input to assistant (stateful)</h4>
+    </div>
+    <p>User input is sent as a request to the assistant, and a response is then received. 
+      Conversation state is stored by the Watson Assistant for the duration of the session.</p>
+
+    <div class="subsection-title">
+      <h4>Send user input to assistant (stateless)</h4>
+    </div>
+  
+    <p>User input is sent as a request to the assistant, and a response is then received. 
+      Conversation state is not stored.</p>
+  </div>
+    
   </div>
 </section>
 
 
-<!-- ======= Footer ======= -->
+<!-- ======= IBM Text to Speech Connector Section ======= -->
+
+    <section id="KeyFeature2" class="requirements">
+      <div class="container" data-aos="fade-up">
+
+        <div class="subsection-title">
+          <h2>IBM Text to Speech Connector</h2>
+        </div>
+        <p>The IBM Watson™ Text to Speech service provides APIs that use IBM's speech-synthesis capabilities 
+          to synthesize text into natural-sounding speech in a variety of languages, dialects, and voices. The service supports
+          at least one male or female voice, sometimes both, for each language. The audio is streamed back to the client with minimal delay.
+        </p>
+        <p>A Microsoft Power Apps/Power Platform plan, IBM Cloud account with Watson access and a provisioned
+          Watson Text to Speech resource are required.
+        </p>
+        <br>  
+        <div class="subsection-title">
+          <h4>Authentication</h4>
+        </div>
+        <p>Paste the IBM Watson Text to Speech API key and service URL in the connector congifuration</p>
+      
+        <div class="subsection-title">
+          <h4>Synthesize</h4>
+        </div>
+        <p>
+          Synthesize user inputted text to audio and pronounce it with a voice that matches the language
+          of the text input.
+        </p>
+        <div class="subsection-title">
+          <h4>Get pronunciation</h4>
+        </div>
+        <p>
+          Return the phonetic pronunciation for the specific word.        
+        </p>
+        <div class="subsection-title">
+          <h4>List voices</h4>
+        </div>
+        <p>
+          List all the voices available for use. Display information about the voice, including name, language and gender.
+        </p>
+        <div class="subsection-title">
+          <h4>Get a voice</h4>
+        </div>
+        <p>
+          Return information about the specified voice, including name, language and gender. If a customization ID is
+          used, return information for the custom model defined for the language of the specified voice.        
+          
+        </p>
+      </div>
+    </section>
+    
+    
+    <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
