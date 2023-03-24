@@ -91,21 +91,6 @@
           </li>
 
           <li class="dropdown">
-            <a class="nav-link dropdown-toggle" href="systemdesign.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              System Design
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="systemdesign.html#SystemArchitecture">System Architecture</a></li>
-              <li><a class="dropdown-item" href="systemdesign.html#SiteMap">Site Map</a></li>
-              <li><a class="dropdown-item" href="systemdesign.html#SequenceDiagrams">Sequence Diagrams</a></li>
-              <li><a class="dropdown-item" href="systemdesign.html#DesignPatterns">Design Patterns</a></li>
-              <li><a class="dropdown-item" href="systemdesign.html#ClassDiagrams">Class Diagrams</a></li>
-              <li><a class="dropdown-item" href="systemdesign.html#DataStorage">Data Storage</a></li>
-              <li><a class="dropdown-item" href="systemdesign.html#Packages&APIs">Packages & APIs</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown">
             <a class="nav-link dropdown-toggle" href="implementation.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Implementation
             </a>
@@ -172,7 +157,9 @@
           <h2>Testing Strategy</h2>
         </div>
           <p>In the Customer Connector UI, there is a 'Test operations' section which allows developers to test the operations of the connector. </p>
-          <p>We passed the tests, which is required for any custom connector to obtain a certification. The screenshot is displayed and Github checks can be found in the links below</p>
+          <p>Test is automatically run by the builder to send request through the connected API following our custom configuration, and it is passed 
+            if a correct JSON response is received from the API without any error code. A custom connector can only be certified when all operations are passed. 
+            The screenshot is displayed and Github checks can be found in the links below</p>
           <img src="assets/img/tts_test.png"/>         
         <div class="PRlinks">
           <a href="https://github.com/microsoft/PowerPlatformConnectors/pull/2365" target="_blank">Link to Text to Speech Connector Pull Request</a>
@@ -219,7 +206,6 @@
             </div>
             <div class="col-md-3 footer-navigation">
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="systemdesign.html">System Design</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="implementation.html">Implementation</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="testings.html">Testings</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="evaluation.html">Evaluation</a></li>
