@@ -631,7 +631,7 @@ section {
 }
 
 .subsection-title p {
-  margin: 0 0 50px 0;
+  margin: 50px 0 50px 0;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1289,6 +1289,11 @@ table, th, td {
 th, td {
   background-color: #dfd1b5;
 }
+th {
+  padding: 13px;
+  text-align: center;
+  font-size: 16px;
+}
 
 .moscow {
   text-align: left;
@@ -1296,4 +1301,9 @@ th, td {
 
 .moscowTableDiv {
   width: 100%;
+}
+
+mark {
+  background-color: #dfd1b5;
+  color: black;
 }
